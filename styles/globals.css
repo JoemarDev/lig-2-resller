@@ -1,16 +1,154 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 * {
-  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+select:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.navigation-section ul {
+  display: flex;
+  font-weight: 600;
+  list-style: none;
+  margin: 0;
+  padding: 0px 20px;
+}
+
+.navigation-section ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #222;
+  border: 2px solid #333;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.navigation-menu li {
+  width: 100%;
+  text-align: center;
+  background-color: #222;
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navigation-menu li:hover {
+  background-color: #444;
+}
+
+.navigation-menu li:hover .navigation-child {
+  display: block;
+}
+
+.navigation-child {
+  display: none;
+  top: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: #222;
+  border: 2px solid #333;
+}
+
+.navigation-child>div {
+  padding: 12px 0px;
+  font-weight: 600;
+  border-bottom: 2px solid #333;
+}
+
+.navigation-child>div:last-child {
+  border: none;
+}
+
+.page-title {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.category-btn {
+  padding: 8px 15px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.category-input {
+  border-radius: 2px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 15px;
+}
+
+.app-table {
+  width: 100%;
+}
+
+.app-table thead tr {
+  background-color: #333;
+}
+
+.app-table thead th {
+  padding: 15px 0px;
+
+}
+
+.app-table tbody td {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.app-table tbody tr {
+  background-color: #2222;
+}
+
+.app-table tbody tr:nth-child(even) {
+  background-color: #222;
 }
