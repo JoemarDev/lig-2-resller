@@ -1,5 +1,6 @@
 import { faAdd, faAngleDoubleRight, faCog, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import WebHelper from "../../../components/Function/WebHelper";
 import Pagination from "../../../components/partials/Footer/Pagination";
@@ -89,6 +90,9 @@ const DateSelectionSection = (() => {
 
 const PartnerRecords = (() => {
 
+    const router = useRouter();
+
+
     // Create a container array for dummy data
     const data = [];
 
@@ -127,6 +131,7 @@ const PartnerRecords = (() => {
                         <th className="text-blue-400">보유금</th>
                         <th className="text-blue-400">롤링포인트</th>
                         <th className="text-yellow-400">알 지급/회수</th>
+                        <th className="text-blue-400">회원수	</th>
                         <th>커미션방식</th>
                         <th >2021-12-09 01:29:11</th>
                         <th >정상</th>
@@ -171,6 +176,7 @@ const PartnerRecords = (() => {
                                 {/* Display the float box if the index is equals to the floatIndex */}
                                 {index == floatIndex && <FloatBox />}
                             </td>
+                            <td className="text-blue-400 cursor-pointer" onClick={() => router.push('/Private/Members/Lists')}>4 명</td>
                             <td>
                                 <div className="category-btn bg-gray-700 mr-1 px-3 py-1">
                                     카지노<span className="text-black mx-1">(루징)</span>50% /슬롯 <span className="text-black mx-1">(루징)</span>9%

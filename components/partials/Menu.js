@@ -10,7 +10,7 @@ const Menu = (() => {
         <>
             <ul className="navigation-menu">
 
-                <li style={{ width: '80%' }}>
+                <li style={{ width: '80%' }} onClick={() => router.push('/Private/Home')}>
                     <FontAwesomeIcon icon={faHome} />
                 </li>
                 <li>

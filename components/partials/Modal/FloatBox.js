@@ -111,6 +111,7 @@ const MoneyAmountConfiguration = (() => {
                 <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" value={WebHelper.FormatMoney(Amount)} placeholder="금액을 입력하세요." />
                 <button className="text-sm category-btn  bg-red-800 border-2 border-red-600 whitespace-nowrap active:bg-red-600" onClick={() => setAmount(0)}>정정</button>
             </div>
+            <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" placeholder=" 내용" />
 
             {/* Set Amount Option buttons */}
             <div className="flex items-center justify-between py-1 ">
