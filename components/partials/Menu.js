@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/router";
 
 const Menu = (() => {
-    const router = useRouter();
 
+    const router = useRouter();
 
     return (
         <>
@@ -12,33 +12,33 @@ const Menu = (() => {
 
                 <li style={{ width: '80%' }}>
                     <FontAwesomeIcon icon={faHome} />
-
                 </li>
                 <li>
                     <FontAwesomeIcon className="mr-2" icon={faUser} />
                     <span>회원관리</span>
                     <div className="navigation-child">
                         <div onClick={() => router.push('/Private/Members/Lists')}>회원관리</div>
-                        <div>회원충전관리</div>
-                        <div>회원환전관리</div>
+                        <div onClick={() => router.push('/Private/Members/Deposit')}>회원충전관리</div>
+                        <div onClick={() => router.push('/Private/Members/Withdrawal')}>회원환전관리</div>
                     </div>
                 </li>
                 <li>
                     <FontAwesomeIcon className="mr-2" icon={faUsers} />파트너관리
                     <div className="navigation-child">
-                        <div>파트너관리</div>
-                        <div>파트너충전관리</div>
-                        <div>파트너환전관리</div>
+                        <div onClick={() => router.push('/Private/Partners/Lists')}>파트너관리</div>
+                        <div onClick={() => router.push('/Private/Partners/Deposit')}>파트너충전관리</div>
+                        <div onClick={() => router.push('/Private/Partners/Withdrawal')}>파트너환전관리</div>
                     </div>
                 </li>
-                <li>
+                <li onClick={() => router.push('/Private/History/Bets')}>
                     <FontAwesomeIcon className="mr-2" icon={faFlag} />배팅내역
                     <div className="navigation-child">
                         <div>슬롯</div>
                         <div>카지노</div>
                         <div>호텔카지노</div>
                         <div>파워볼</div>
-                        <div>파워볼</div>
+                        <div>미니게임</div>
+                        <div>벳이스트</div>
                     </div>
                 </li>
                 <li>
@@ -55,8 +55,8 @@ const Menu = (() => {
                     <div className="navigation-child">
                         <div>캐시관리</div>
                         <div>포인트관리</div>
-                        <div>매출현황</div>
-                        <div>토마스</div>
+                        <div>정산1</div>
+                        <div>정산2</div>
                     </div>
                 </li>
                 <li className="bg-red-500">

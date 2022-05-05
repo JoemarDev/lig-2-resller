@@ -7,6 +7,7 @@
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 select:focus {
@@ -93,6 +94,7 @@ body {
   width: 100%;
   background-color: #222;
   border: 2px solid #333;
+  z-index: 20;
 }
 
 .navigation-child>div {
@@ -134,7 +136,7 @@ body {
 }
 
 .app-table thead th {
-  padding: 15px 0px;
+  padding: 10px 0px;
 
 }
 
@@ -151,4 +153,187 @@ body {
 
 .app-table tbody tr:nth-child(even) {
   background-color: #222;
+}
+
+
+/* Pagination Style */
+
+.bg-level-1,
+.bg-level-2,
+.bg-level-3,
+.bg-level-4,
+.bg-level-5,
+.bg-level-6,
+.bg-level-7,
+.bg-level-8,
+.bg-level-9,
+.bg-level-10 {
+  background: url('/images/seda-level.png');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+
+
+
+/* level sprite */
+
+.bg-level-1 {
+  width: 12px;
+  height: 12px;
+  background-position: -10px -10px;
+}
+
+.bg-level-2 {
+  width: 12px;
+  height: 12px;
+  background-position: -42px -10px;
+}
+
+.bg-level-3 {
+  width: 12px;
+  height: 12px;
+  background-position: -10px -42px;
+}
+
+.bg-level-4 {
+  width: 12px;
+  height: 12px;
+  background-position: -42px -42px;
+}
+
+.bg-level-5 {
+  width: 12px;
+  height: 12px;
+  background-position: -74px -10px;
+}
+
+.bg-level-6 {
+  width: 12px;
+  height: 12px;
+  background-position: -74px -42px;
+}
+
+.bg-level-7 {
+  width: 12px;
+  height: 12px;
+  background-position: -10px -74px;
+}
+
+.bg-level-8 {
+  width: 12px;
+  height: 12px;
+  background-position: -42px -74px;
+}
+
+.bg-level-9 {
+  width: 12px;
+  height: 12px;
+  background-position: -74px -74px;
+}
+
+.bg-level-10 {
+  width: 12px;
+  height: 12px;
+  background-position: -106px -10px;
+}
+
+/* end */
+
+
+/* Option Modal Button */
+
+.option-modal-btn {
+  background-color: #b56d00;
+  border-radius: 2px;
+  width: 100px;
+  padding: 4px;
+  font-size: 12px;
+  margin: auto;
+
+}
+
+.member-float-box {
+  position: absolute;
+  background: #222;
+  border: 2px solid #777;
+  left: 100%;
+  padding: 7px;
+  top: 0;
+
+}
+
+
+.member-float-box .data-information {
+  width: 100%;
+  border: 2px solid #4444;
+  font-size: 12px;
+}
+
+.member-float-box .data-information th {
+  background: #4444;
+  width: 40%;
+  border: 2px solid #555;
+}
+
+.member-float-box .data-information td {
+  font-size: 12px;
+  border: 2px solid #555;
+}
+
+
+/* Pagination Styles */
+
+
+.web-pagination {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.web-pagination ul {
+  list-style: none;
+  display: flex;
+  font-weight: 600;
+  padding: 0;
+}
+
+.web-pagination ul li a {
+  padding: 5px 15px;
+  background: #222;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.web-pagination ul li a:hover {
+  background: #636363;
+  transition: all 0.5s;
+}
+
+.web-pagination .selected a {
+  background: #636363;
+}
+
+
+
+/* Partner Style */
+
+.partner-type-badge {
+  display: flex;
+}
+
+.partner-type-badge li:nth-child(odd) {
+  background-color: #222;
+  padding: 1px 5px;
+  font-size: 12px;
+  margin: 0px 5px;
+  border: 2px solid #8888;
+  border-radius: 5px;
 }
