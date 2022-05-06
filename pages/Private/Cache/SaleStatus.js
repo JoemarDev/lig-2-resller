@@ -190,6 +190,26 @@ const SaleStatusRecord = (() => {
                     }
 
                 </tbody>
+                <thead>
+                    <tr>
+                        <th>최종정산일 기준 현재합계</th>
+                        <th className="hover:bg-stone-800 cursor-pointer" >2</th>
+                        <th className="hover:bg-stone-800 cursor-pointer" ><span className="text-blue-400">12,965,000</span> (35/22)</th>
+                        <th className="hover:bg-stone-800 cursor-pointer" ><span className="text-red-400">-12,965,000</span> (1/1)</th>
+                        <th><div className="py-1 px-3 bg-blue-600 rounded">12,965,000</div></th>
+                        <th className="text-green-500">21,334,100</th>
+                        <th className="text-yellow-500">9,523,410</th>
+                        <th className="hover:bg-stone-800 cursor-pointer" ><span className="text-blue-400">12,965,000</span> (35/22)</th>
+                        <th className="hover:bg-stone-800 cursor-pointer" ><span className="text-red-400">-12,965,000</span> (1/1)</th>
+                        <th><div className="py-1 px-3 bg-red-600 rounded">-12,965,000</div></th>
+                        <th className="text-green-500">21,334,100</th>
+                        <th className="text-yellow-500">9,523,410</th>
+                        <th>
+                            <button className="category-btn  bg-blue-500  rounded mr-1" ><FontAwesomeIcon icon={faBarChart} /></button>
+                            <button className="category-btn  bg-green-500  rounded mr-1" ><FontAwesomeIcon icon={faBarChart} /></button>
+                        </th>
+                    </tr>
+                </thead>
             </table>
         </>
     )
