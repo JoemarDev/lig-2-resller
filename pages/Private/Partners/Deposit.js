@@ -164,7 +164,7 @@ const DepositRecords = (() => {
                                 </div>
                             </td>
                             <td>max</td>
-                            <td><b className="bg-level-1"></b>max</td>
+                            <td className="text-blue-400">max</td>
                             <td>{WebHelper.FormatMoney(5000000)}원</td>
                             <td className="relative">{WebHelper.FormatMoney(1000)} P</td>
                             <td>max</td>
@@ -175,8 +175,8 @@ const DepositRecords = (() => {
                             </td>
                             <td>2022-01-26 14:57:42</td>
                             <td>
-                                {index % 2 == 0 && <span className="text-blue-400"> 정상회원</span>}
-                                {index % 2 == 1 && <span className="text-red-400">	탈퇴회원</span>}
+                                {index % 2 == 0 && <span className="text-blue-400"> 정상</span>}
+                                {index % 2 == 1 && <span className="text-red-400">	탈퇴</span>}
                             </td>
                             <td>
                                 {index % 2 == 0 && <span className="text-blue-400"> 승인</span>}

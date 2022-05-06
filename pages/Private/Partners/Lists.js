@@ -127,14 +127,14 @@ const PartnerRecords = (() => {
                         </th>
                         <th>-</th>
                         <th>아이디	</th>
-                        <th >파트너닉네임</th>
+                        <th className="text-blue-400" >파트너닉네임</th>
                         <th className="text-blue-400">보유금</th>
                         <th className="text-blue-400">롤링포인트</th>
-                        <th className="text-yellow-400">알 지급/회수</th>
+                        <th className="text-yellow-400">머니 지급/회수</th>
                         <th className="text-blue-400">회원수	</th>
                         <th>커미션방식</th>
-                        <th >2021-12-09 01:29:11</th>
-                        <th >정상</th>
+                        <th >파트너생성일</th>
+                        <th >분류</th>
                         <th >관리</th>
                     </tr>
                 </thead>
@@ -158,8 +158,8 @@ const PartnerRecords = (() => {
                                 </div>
                             </td>
                             <td>-</td>
-                            <td>test7</td>
                             <td >test7</td>
+                            <td className="text-blue-400">test7</td>
                             <td className="text-blue-400">0	</td>
                             <td className="text-blue-400">0	</td>
                             <td className="relative">
@@ -171,7 +171,7 @@ const PartnerRecords = (() => {
                                     // show the float box if the first condition is not met
                                     setFloatIndex(index);
 
-                                }}>알 지급/회수</div>
+                                }}>머니 지급/회수</div>
 
                                 {/* Display the float box if the index is equals to the floatIndex */}
                                 {index == floatIndex && <FloatBox />}
@@ -184,8 +184,8 @@ const PartnerRecords = (() => {
                             </td>
                             <td >2021-12-09 01:29:11</td>
                             <td >
-                                {index % 2 == 0 && <span className="text-blue-400"> 정상파트너</span>}
-                                {index % 2 == 1 && <span className="text-red-400">탈퇴파트너</span>}
+                                {index % 2 == 0 && <span className="text-blue-400"> 정상</span>}
+                                {index % 2 == 1 && <span className="text-red-400">탈퇴</span>}
                             </td>
                             <td ><FontAwesomeIcon icon={faCog} className={'cursor-pointer'} /></td>
                         </tr>

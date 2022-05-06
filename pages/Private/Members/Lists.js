@@ -56,11 +56,13 @@ const TableSection = (() => {
                 <thead>
                     <tr>
                         <th className="text-blue-400">가입코드</th>
+                        <th>추천인</th>
+
                         <th>아이디</th>
-                        <th>이름</th>
                         <th className="text-blue-400">닉네임</th>
+                        <th>이름</th>
                         <th>가입일</th>
-                        <th className="text-yellow-400">알 지급/회수</th>
+                        <th className="text-yellow-400">머니 지급/회수</th>
                         <th className="text-blue-400">수익금</th>
                         <th className="text-blue-400">보유머니</th>
                         <th className="text-blue-400">보유포인트</th>
@@ -74,9 +76,11 @@ const TableSection = (() => {
                     {data.map((item, index) => (
                         <tr key={index}>
                             <td className="text-blue-400">test7</td>
+                            <td>-</td>
                             <td>max</td>
+                            <td className="text-blue-400"><b className="bg-level-1"></b>max</td>
                             <td>max</td>
-                            <td><b className="bg-level-1"></b>max</td>
+
                             <td>2021-12-16 04:30:29</td>
 
                             <td className="relative">
@@ -88,7 +92,7 @@ const TableSection = (() => {
                                     // show the float box if the first condition is not met
                                     setFloatIndex(index);
 
-                                }}>알 지급/회수</div>
+                                }}>머니 지급/회수</div>
 
                                 {/* Display the float box if the index is equals to the floatIndex */}
                                 {index == floatIndex && <FloatBox />}
@@ -103,9 +107,9 @@ const TableSection = (() => {
                             <td className="text-blue-400">{WebHelper.FormatMoney(50000)}원</td>
                             <td className="text-red-400">{WebHelper.FormatMoney(50800)}원</td>
                             <td>
-                                {index % 3 == 0 && <span >대기회원</span>}
-                                {index % 3 == 1 && <span className="text-blue-400"> 정상회원</span>}
-                                {index % 3 == 2 && <span className="text-red-400">탈퇴회원</span>}
+                                {index % 3 == 0 && <span >대기</span>}
+                                {index % 3 == 1 && <span className="text-blue-400"> 정상</span>}
+                                {index % 3 == 2 && <span className="text-red-400">탈퇴</span>}
                             </td>
                             <td><FontAwesomeIcon icon={faCog} className={'cursor-pointer'} /></td>
                         </tr>

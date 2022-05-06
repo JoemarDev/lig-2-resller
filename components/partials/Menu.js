@@ -41,7 +41,7 @@ const Menu = (() => {
                         <div>벳이스트</div>
                     </div>
                 </li>
-                <li>
+                <li onClick={() => router.push('/Private/Transfer/Transfer')}>
                     <FontAwesomeIcon className="mr-2" icon={faExchangeAlt} />캐쉬 이동경로
                     <div className="navigation-child">
                         <div>관리자지급</div>
@@ -53,10 +53,10 @@ const Menu = (() => {
                 <li>
                     <FontAwesomeIcon className="mr-2" icon={faDatabase} />일/월별통계
                     <div className="navigation-child">
-                        <div>캐시관리</div>
-                        <div>포인트관리</div>
-                        <div>정산1</div>
-                        <div>정산2</div>
+                        <div onClick={() => router.push('/Private/Cache/CashRecord')}>캐시관리</div>
+                        <div onClick={() => router.push('/Private/Cache/PointsRecord')}>포인트관리</div>
+                        <div onClick={() => router.push('/Private/Cache/SaleStatus')}>정산1</div>
+                        <div onClick={() => router.push('/Private/Cache/AdminRecords')}>정산2</div>
                     </div>
                 </li>
                 <li className="bg-red-500">

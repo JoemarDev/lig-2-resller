@@ -10,6 +10,10 @@
 
 }
 
+textarea:focus {
+  outline: none;
+}
+
 select:focus {
   outline: none;
 }
@@ -127,12 +131,16 @@ body {
   padding: 8px 15px;
 }
 
+.trans-table tr {
+  height: 60px;
+}
+
 .app-table {
   width: 100%;
 }
 
 .app-table thead tr {
-  background-color: #333;
+  background-color: #333 !important;
 }
 
 .app-table thead th {
@@ -336,4 +344,84 @@ body {
   margin: 0px 5px;
   border: 2px solid #8888;
   border-radius: 5px;
+}
+
+
+/* Indicator Style */
+
+.indicator-display {
+  width: 100%;
+  background-color: #222;
+  text-align: center;
+  padding: 10px 5px;
+  border: 3px solid #4444;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+
+/* Progress bar style */
+
+progress {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+#pr-1[value]::-webkit-progress-value {
+  background-image:
+    -webkit-linear-gradient(-45deg,
+      transparent 33%, rgba(0, 0, 0, .1) 33%,
+      rgba(0, 0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top,
+      rgba(255, 255, 255, .25),
+      rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, #09c, #09c);
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+#pr-2[value]::-webkit-progress-value {
+  background-image:
+    -webkit-linear-gradient(-45deg,
+      transparent 33%, rgba(0, 0, 0, .1) 33%,
+      rgba(0, 0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top,
+      rgba(255, 255, 255, .25),
+      rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, #f44, #f44);
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+#pr-3[value]::-webkit-progress-value {
+  background-image:
+    -webkit-linear-gradient(-45deg,
+      transparent 33%, rgba(0, 0, 0, .1) 33%,
+      rgba(0, 0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top,
+      rgba(255, 255, 255, .25),
+      rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, rgb(12, 214, 23), rgb(12, 214, 23));
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.PointsModal {
+  width: 500px;
+  max-width: 90%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  position: fixed;
+  z-index: 170;
+  background-color: #0d0d0d;
+  padding: 50px 20px;
+  top: 50%;
+  border-radius: 5px;
+  border: 3px solid #333;
+  text-align: center;
+  font-weight: 600;
 }

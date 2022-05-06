@@ -87,11 +87,11 @@ const TransActionPicker = ((props) => {
             <div className="flex items-center justify-between py-1">
                 <div onClick={() => props.getType(0)}
                     className={`${props.transType == 0 ? 'bg-stone-800' : 'bg-stone-600'} text-xs category-btn  mr-1 w-full border-2 border-stone-500 text-blue-300 text-bold cursor-pointer`}>
-                    알 지급 <FontAwesomeIcon icon={faAdd} />
+                    보유머니 지급 <FontAwesomeIcon icon={faAdd} />
                 </div>
                 <div onClick={() => props.getType(1)}
                     className={`${props.transType == 1 ? 'bg-stone-800' : 'bg-stone-600'} text-xs category-btn  w-full border-2 border-stone-500 text-red-500 text-bold cursor-pointer`}>
-                    알 회수 <FontAwesomeIcon icon={faMinus} />
+                    보유머니 회수 <FontAwesomeIcon icon={faMinus} />
                 </div>
             </div>
             {/* End of Type Selection Area */}
@@ -111,7 +111,7 @@ const MoneyAmountConfiguration = (() => {
                 <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" value={WebHelper.FormatMoney(Amount)} placeholder="금액을 입력하세요." />
                 <button className="text-sm category-btn  bg-red-800 border-2 border-red-600 whitespace-nowrap active:bg-red-600" onClick={() => setAmount(0)}>정정</button>
             </div>
-            <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" placeholder=" 내용" />
+            <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" placeholder=" 간단메모" />
 
             {/* Set Amount Option buttons */}
             <div className="flex items-center justify-between py-1 ">
