@@ -40,7 +40,6 @@ const FilterCategory = (() => {
                     <button className="category-btn bg-gray-700 mr-1">전체파트너</button>
                     <button className="category-btn bg-blue-500 mr-1"> 정상파트너</button>
                     <button className="category-btn bg-red-500 mr-1">탈퇴파트너</button>
-                    <button className="category-btn bg-green-600 mr-1"><FontAwesomeIcon icon={faAdd} /> 파트너추가</button>
                 </div>
 
                 {/* Right Category Section */}
@@ -129,13 +128,13 @@ const PartnerRecords = (() => {
                         <th>아이디	</th>
                         <th className="text-blue-400" >파트너닉네임</th>
                         <th className="text-blue-400">보유금</th>
-                        <th className="text-blue-400">롤링포인트</th>
+                        <th className="text-blue-400">보유포인트</th>
                         <th className="text-yellow-400">머니 지급/회수</th>
                         <th className="text-blue-400">회원수	</th>
                         <th>커미션방식</th>
                         <th >파트너생성일</th>
                         <th >분류</th>
-                        <th >관리</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -151,13 +150,19 @@ const PartnerRecords = (() => {
                                         <li className="text-blue-500 mx-2">asd</li>
                                         <li><FontAwesomeIcon icon={faAngleDoubleRight} /></li>
                                         <li className="text-yellow-500 mx-2">rty</li>
-                                        <li><FontAwesomeIcon icon={faAngleDoubleRight} /></li>
-                                        <li className="mx-2" >zxc</li>
+
+                                        {index != 2 && <>
+                                            <li><FontAwesomeIcon icon={faAngleDoubleRight} /></li>
+                                            <li className="mx-2 text-xs  px-1  rounded  ">TEST</li>
+                                        </>}
                                     </ul>
                                     {/* End Partner Badge */}
                                 </div>
                             </td>
-                            <td>-</td>
+                            <td>
+                                {index == 2 && <button className="p-2 bg-blue-500 rounded">+ 1</button>}
+                                {index != 2 && '-'}
+                            </td>
                             <td >test7</td>
                             <td className="text-blue-400">test7</td>
                             <td className="text-blue-400">0	</td>
@@ -178,7 +183,7 @@ const PartnerRecords = (() => {
                             </td>
                             <td className="text-blue-400 cursor-pointer" onClick={() => router.push('/Private/Members/Lists')}>4 명</td>
                             <td>
-                                <div className="category-btn bg-gray-700 mr-1 px-3 py-1">
+                                <div className="category-btn bg-stone-500 mr-1 px-3 py-1">
                                     카지노<span className="text-black mx-1">(루징)</span>50% /슬롯 <span className="text-black mx-1">(루징)</span>9%
                                 </div>
                             </td>
@@ -187,7 +192,6 @@ const PartnerRecords = (() => {
                                 {index % 2 == 0 && <span className="text-blue-400"> 정상</span>}
                                 {index % 2 == 1 && <span className="text-red-400">탈퇴</span>}
                             </td>
-                            <td ><FontAwesomeIcon icon={faCog} className={'cursor-pointer'} /></td>
                         </tr>
                     ))}
 

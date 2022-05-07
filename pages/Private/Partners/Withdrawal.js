@@ -134,7 +134,7 @@ const WithdrawalRecords = (() => {
                             </div>
                         </th>
                         <th>아이디</th>
-                        <th className="text-blue-400">닉네임</th>
+                        <th className="text-blue-400">파트너닉네임</th>
                         <th >보유머니</th>
                         <th>보유포인트</th>
                         <th >예금주명</th>

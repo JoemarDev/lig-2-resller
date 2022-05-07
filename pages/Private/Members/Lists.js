@@ -63,11 +63,12 @@ const TableSection = (() => {
                         <th>이름</th>
 
                         <th className="text-yellow-400">머니 지급/회수</th>
-                        <th className="text-blue-400">수익금</th>
+
                         <th className="text-blue-400">보유머니</th>
                         <th className="text-blue-400">보유포인트</th>
                         <th className="text-blue-400">충전합계</th>
                         <th className="text-red-400">환전합계</th>
+                        <th className="text-blue-400">수익금</th>
                         <th>가입일</th>
                         <th>최근접속일</th>
                         <th>분류</th>
@@ -99,14 +100,15 @@ const TableSection = (() => {
                                 {index == floatIndex && <FloatBox />}
                             </td>
 
-                            <td>
-                                {index % 2 == 0 && <span className={'text-blue-400'}>{WebHelper.FormatMoney(7000000)}원</span>}
-                                {index % 2 != 0 && <span className={'text-red-400'}>-{WebHelper.FormatMoney(7000000)}원</span>}
-                            </td>
+
                             <td className="text-blue-400">{WebHelper.FormatMoney(6000000)}원</td>
                             <td className="text-blue-400">{WebHelper.FormatMoney(50)}원</td>
                             <td className="text-blue-400">{WebHelper.FormatMoney(50000)}원</td>
                             <td className="text-red-400">{WebHelper.FormatMoney(50800)}원</td>
+                            <td>
+                                {index % 2 == 0 && <span className={'text-blue-400'}>{WebHelper.FormatMoney(7000000)}원</span>}
+                                {index % 2 != 0 && <span className={'text-red-400'}>-{WebHelper.FormatMoney(7000000)}원</span>}
+                            </td>
                             <td>2021-12-16 04:30:29</td>
                             <td>2021-12-16 05:30:29</td>
                             <td>
