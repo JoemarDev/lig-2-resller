@@ -111,7 +111,7 @@ const MoneyAmountConfiguration = (() => {
                 <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" value={WebHelper.FormatMoney(Amount)} placeholder="금액을 입력하세요." />
                 <button className="text-sm category-btn  bg-red-800 border-2 border-red-600 whitespace-nowrap active:bg-red-600" onClick={() => setAmount(0)}>정정</button>
             </div>
-            <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" placeholder=" 간단메모" />
+
 
             {/* Set Amount Option buttons */}
             <div className="flex items-center justify-between py-1 ">
@@ -121,6 +121,8 @@ const MoneyAmountConfiguration = (() => {
                 <button className="active:bg-stone-500 text-xs whitespace-nowrap category-btn bg-stone-300 w-full text-black mr-1" onClick={() => setAmount(Amount + 50000)}>50만원</button>
                 <button className="active:bg-stone-500 text-xs whitespace-nowrap category-btn bg-stone-300 w-full text-black" onClick={() => setAmount(Amount + 100000)}>100만원</button>
             </div>
+
+            <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" placeholder=" 간단메모" />
 
             {/* Submit Amount Button */}
             <button className="text-xs whitespace-nowrap category-btn bg-blue-500 w-full  my-1" >확인</button>
