@@ -64,12 +64,7 @@ const PartnerAmountIndicator = (() => {
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <th className="w-1/5 border-2 border-stone-800">출금비밀번호</th>
-                        <td className="text-left border-2 border-stone-800  pl-5">
-                            <input className="category-btn bg-stone-700 mr-1 border-2 border-stone-800 w-full w-8/12" type={'password'} />
-                        </td>
-                    </tr>
+
                 </tbody>
             </table>
         </>

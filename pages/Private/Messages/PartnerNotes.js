@@ -7,7 +7,7 @@ const PartnerNotes = (() => {
                 <div className="flex my-5 justify-between">
                     <div><h2 className="page-title ">쪽지함</h2></div>
                     <div>
-                        <button className="category-btn bg-stone-700 mr-1">삭제</button>
+                        <button className="category-btn bg-red-500 mr-1">선택삭제</button>
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@ const NotesData = (() => {
                         <th>제목</th>
                         <th>작성자	</th>
                         <th>읽은시간</th>
-                        <th>답변여부</th>
+                        <th>확인일자</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -51,7 +51,11 @@ const NotesData = (() => {
                             <td><input type={'checkbox'} /></td>
                             <td className="cursor-pointer" onClick={() => router.push('/Private/Messages/ViewMessage')}>[ 쪽지 ] 오징어파워볼 쪽지 안내입니다.</td>
                             <td>관리자</td>
-                            <td>05/04 16:08</td>
+                            <td>
+                                {index % 2 == 0 && <span>-</span>}
+                                {index % 2 == 1 && <span > 2021-12-16 04:30:29</span>}
+
+                            </td>
                             <td>
                                 {index % 2 == 0 && <span className="text-red-400">안읽음</span>}
                                 {index % 2 == 1 && <span className="text-blue-400">읽음</span>}

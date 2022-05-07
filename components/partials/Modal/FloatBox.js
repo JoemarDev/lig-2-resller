@@ -122,7 +122,7 @@ const MoneyAmountConfiguration = (() => {
                 <button className="active:bg-stone-500 text-xs whitespace-nowrap category-btn bg-stone-300 w-full text-black" onClick={() => setAmount(Amount + 100000)}>100만원</button>
             </div>
 
-            <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" placeholder=" 간단메모" />
+            <input className="text-xs category-btn w-full bg-stone-900 border-2 border-stone-700 mr-1" placeholder=" 처리내용" />
 
             {/* Submit Amount Button */}
             <button className="text-xs whitespace-nowrap category-btn bg-blue-500 w-full  my-1" >확인</button>
