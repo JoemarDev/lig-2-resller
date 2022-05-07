@@ -78,9 +78,9 @@ const AddCashCacheForm = (() => {
     return (
         <>
             <div>
-                <input className="category-input mr-1" placeholder="검색어" />
-                <input className="category-input mr-1" placeholder="검색어" />
-                <input className="category-input mr-1" placeholder="검색어" />
+                <input className="category-input mr-1" placeholder="닉네임" />
+                <input className="category-input mr-1" placeholder="캐시 지급금액 입력" />
+                <input className="category-input mr-1" placeholder="캐시 내용" />
                 <button className="category-btn bg-gray-600 mr-1"><FontAwesomeIcon icon={faAdd} />회원추가</button>
 
             </div>

@@ -55,11 +55,11 @@ const PartnerAmountIndicator = (() => {
                             <input className="category-btn bg-stone-700 mr-1 border-2 border-stone-800 w-full w-8/12" value={WebHelper.FormatMoney(Amount)} />
                             {/* Set Amount Option buttons */}
                             <div className="flex items-center justify-between py-1 w-8/12">
-                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 1000)}>1만원</button>
-                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 5000)}>5만원</button>
-                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 10000)}>10만원</button>
-                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 50000)}>50만원</button>
-                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 100000)}>100만원</button>
+                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 10000)}>1만원</button>
+                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 50000)}>5만원</button>
+                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 100000)}>10만원</button>
+                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 500000)}>50만원</button>
+                                <button className="active:bg-stone-700 text-xs whitespace-nowrap category-btn bg-stone-600 w-full  mr-1" onClick={() => setAmount(Amount + 1000000)}>100만원</button>
                                 <button className="active:bg-red-500 text-xs whitespace-nowrap category-btn bg-red-500 w-full " onClick={() => setAmount(0)}>정정</button>
                             </div>
                         </td>
