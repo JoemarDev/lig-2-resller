@@ -125,7 +125,7 @@ const PointsRecordData = (() => {
                         <th>처리내용</th>
                         <th>보유포인트</th>
                         <th>처리시간</th>
-                        <th>캐쉬합</th>
+                        <th>포인트합</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -140,7 +140,7 @@ const PointsRecordData = (() => {
                             <td className="text-blue-400" style={{ width: '40%' }}>[입금] 100,000입금완료 / 고유코드 [yoyo99624aa3bd5b77f-1649058749]	</td>
                             <td className="text-blue-400">10,000 P</td>
                             <td >2022. 04. 04. 16:52:29	</td>
-                            <td className="text-blue-400">0 원	</td>
+                            <td className="text-blue-400">0 P	</td>
                         </tr>
                     ))}
                 </tbody>

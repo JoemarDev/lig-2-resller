@@ -10,7 +10,7 @@ const PartnerWithdrawal = (() => {
                 <h2 className="page-title my-5">환전신청</h2>
 
                 <div className="indicator-display bg-red-500">
-                    <p>23:50~00:30, 휴일 다음 첫 영업일 새벽에는 은행점검으로 인해 계좌이체가 지연 될 수 있습니다.</p>
+                    <p>23:30~00:30, 휴일 다음 첫 영업일 새벽에는 은행점검으로 인해 계좌이체가 지연 될 수 있습니다.</p>
                     <p>위 시간 이외에도 몇몇 은행은 추가적 점검시간이 따로 있으니 이점 유념하시기 바랍니다.</p>
                 </div>
 

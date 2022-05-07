@@ -125,7 +125,7 @@ const WithdrawalRecords = (() => {
                         <th className="text-blue-400">닉네임</th>
                         <th >보유머니</th>
                         <th>보유포인트</th>
-                        <th >입금자명</th>
+                        <th >예금주명</th>
                         <th className="text-red-500">환전신청금액</th>
                         <th >환전신청일시</th>
                         <th >분류</th>

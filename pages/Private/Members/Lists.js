@@ -61,15 +61,16 @@ const TableSection = (() => {
                         <th>아이디</th>
                         <th className="text-blue-400">닉네임</th>
                         <th>이름</th>
-                        <th>가입일</th>
+
                         <th className="text-yellow-400">머니 지급/회수</th>
                         <th className="text-blue-400">수익금</th>
                         <th className="text-blue-400">보유머니</th>
                         <th className="text-blue-400">보유포인트</th>
                         <th className="text-blue-400">충전합계</th>
                         <th className="text-red-400">환전합계</th>
+                        <th>가입일</th>
+                        <th>최근접속일</th>
                         <th>분류</th>
-                        <th>관리</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,7 +82,7 @@ const TableSection = (() => {
                             <td className="text-blue-400"><b className="bg-level-1"></b>max</td>
                             <td>max</td>
 
-                            <td>2021-12-16 04:30:29</td>
+
 
                             <td className="relative">
                                 <div className="option-modal-btn cursor-pointer" onClick={() => {
@@ -106,12 +107,14 @@ const TableSection = (() => {
                             <td className="text-blue-400">{WebHelper.FormatMoney(50)}원</td>
                             <td className="text-blue-400">{WebHelper.FormatMoney(50000)}원</td>
                             <td className="text-red-400">{WebHelper.FormatMoney(50800)}원</td>
+                            <td>2021-12-16 04:30:29</td>
+                            <td>2021-12-16 05:30:29</td>
                             <td>
                                 {index % 3 == 0 && <span >대기</span>}
                                 {index % 3 == 1 && <span className="text-blue-400"> 정상</span>}
                                 {index % 3 == 2 && <span className="text-red-400">탈퇴</span>}
                             </td>
-                            <td><FontAwesomeIcon icon={faCog} className={'cursor-pointer'} /></td>
+
                         </tr>
                     ))}
 

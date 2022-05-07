@@ -30,6 +30,7 @@ const Navigation = (() => {
                     <ul>
                         <li style={{ justifyContent: 'center' }} className={'cursor-pointer'} onClick={() => router.push('/Private/Transaction/Deposit')}>충전신청 </li>
                         <li style={{ justifyContent: 'center' }} className={'cursor-pointer'} onClick={() => router.push('/Private/Transaction/Withdrawal')}>환전신청 </li>
+                        <li style={{ justifyContent: 'center' }} className={'cursor-pointer'} onClick={() => setConverting(true)}>포인트전환 </li>
                         <li style={{ justifyContent: 'center' }} className={'cursor-pointer'} onClick={() => router.push('/Private/Messages/PartnerInquiry')}>1:1문의 </li>
                         <li style={{ justifyContent: 'center' }} className={'cursor-pointer'} onClick={() => router.push('/Private/Messages/PartnerNotes')}>쪽지함 </li>
                     </ul>
