@@ -169,7 +169,7 @@ const SaleStatusRecord = (() => {
 
                                     {TableType == 6 &&
                                         <>
-                                            <h2 className="text-xl text-left "> 상세정보  :: <span className="text-yellow-500">2022-04-28</span></h2>
+                                            <h2 className="text-xl text-left "> 상세정보1  :: <span className="text-yellow-500">2022-04-28</span></h2>
                                             <button className="category-btn bg-green-700 mr-1 my-5 w-full">엑셀데이타로 저장하기</button>
                                             <DetailsTable />
                                         </>
@@ -177,12 +177,13 @@ const SaleStatusRecord = (() => {
 
                                     {TableType == 7 &&
                                         <>
-                                            <h2 className="text-xl text-left "> 입금정보  :: <span className="text-yellow-500">2022-04-28</span></h2>
+                                            <h2 className="text-xl text-left "> 상세정보2  :: <span className="text-yellow-500">2022-04-28</span></h2>
                                             <button className="category-btn bg-green-700 mr-1 my-5 w-full">엑셀데이타로 저장하기</button>
                                             <AccountDetails />
                                         </>
                                     }
-                                    <Pagination />
+                                    {TableType != 6 && <Pagination />}
+
                                 </div>
                             </td>
                         </tr>
