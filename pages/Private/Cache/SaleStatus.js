@@ -182,7 +182,7 @@ const SaleStatusRecord = (() => {
                                             <AccountDetails />
                                         </>
                                     }
-                                    {TableType != 6 && <Pagination />}
+                                    {(TableType != 6 && TableType != 7) && <Pagination />}
 
                                 </div>
                             </td>
